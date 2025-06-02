@@ -1,14 +1,13 @@
-import App from "./App.jsx"
-import {
-    BrowserRouter,
-    Route,
-    createBrowserRouter,
-    createRoutesFromElements
-} from 'react-router-dom';
+import Index from './pages/index.jsx'
+import Navbar from './navbar/NavBar.jsx';
+import { createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 const router = createBrowserRouter(
-    createRoutesFromElements(
+  createRoutesFromElements(
     <>
-        <Route path="/" element={<App/>}></Route>
+    <Route path="/" element={<Index />} />
+    <Route path="/navbar" element={<Navbar />} />
     </>
-    )
-)
+  )
+);
+
+export default router;
