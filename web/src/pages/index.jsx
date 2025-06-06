@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <Navbar>
-        <Route path="/" element={<Index />} />
+  
     </Navbar>
     
     <div style={{ fontFamily: 'Arial, sans-serif', padding: '2rem' }}>
