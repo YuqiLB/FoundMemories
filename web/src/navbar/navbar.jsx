@@ -2,11 +2,11 @@ import React from 'react';
 import '../pages/indexPage.css'; // or separate navbar.css if preferred
 
 const navItems = [
-  { name: 'Impacts', link: '#impacts' },
-  { name: 'Events', link: '#events' },
-  { name: 'Get Involved', link: '#get-involved' },
-  { name: 'Contact Us', link: '#contact' },
-  { name: 'Story Archives', link: '#storyarchives' },
+  { name: 'Impacts', link: 'impacts' },
+  { name: 'Events', link: 'events' },
+  { name: 'Get Involved', link: 'get-involved' },
+  { name: 'Contact Us', link: 'contact' },
+  { name: 'Story Archives', link: 'storyarchives' },
 ];
 
 const Navbar = () => {

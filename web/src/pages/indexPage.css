@@ -58,7 +58,7 @@ a:hover {
 
 .Page {
   flex: 1;
-  padding-top: 620px; /* height of navbar */
+  padding-top: 1420px; /* height of navbar */
   width: 100%;
   box-sizing: border-box;
   padding-left: 1rem;
@@ -73,19 +73,193 @@ a:hover {
   margin: 0 auto;
 }
 
+
+/*--------------------------Paragraph1---------------------------*/
+
 .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
   font-family: Arial, sans-serif;
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
-  text-align: left; 
+  text-align: left;
+  flex-wrap: wrap; 
+
 }
 
-.main-content section {
-  margin-bottom: 4rem;
+.intro-image {
+  width: 35%;
+  max-width: 600px;
+  height: auto;
+
+  border-radius: 6px;
+  flex-shrink: 0; 
 }
 
-/* Navbar Styles */
+.sharing-stories {
+  max-width: 600px;
+}
+
+.sharing-stories h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+}
+
+.sharing-stories p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+#about {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .sharing-stories {
+    text-align: center;
+  }
+}
+/*--------------------------Paragraph1 End---------------------------*/
+
+/*--------------------------Paragraph2---------------------------*/
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: left;
+  flex-wrap: wrap; 
+}
+
+.mission-image {
+  width: 35%;
+  max-width: 600px;
+  height: auto;
+
+  border-radius: 6px;
+  flex-shrink: 0; 
+}
+
+.mission-top {
+  display: flex;
+  align-items: left;
+  gap: 10rem;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.mission-top h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+}
+
+.mission-top p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+
+#mission-half {
+  max-width: 600px;
+  flex: 1;
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.mission-bottom {
+  margin-top: 0rem;
+}
+
+.mission-bottom h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+}
+
+.mission-bottom p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+
+.mission-image {
+  width: 35%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+#mission-fill {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-image {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-half {
+    text-align: center;
+  }
+}
+
+/*--------------------------Paragraph2 End---------------------------*/
+
+/*--------------------------Team---------------------------*/
+.team-image1{
+  width: 20%;
+}
+.team-image2{
+  width: 20%;
+}
+.team-image3{
+  width: 20%;
+}
+.team-image4{
+  width: 20%;
+}
+.team-image5{
+  width: 20%;
+}
+
+/*--------------------------Team End---------------------------*/
+
+
+/*--------------------- Navbar Styles------------------*/
 .header {
   position: fixed;
   top: 0;
@@ -141,6 +315,8 @@ a:hover {
   background-color: var(--tertiary-color);
   color: var(--primary-text-color);
 }
+/*--------------------- Navbar Styles End------------------*/
+
 /* Sections */
 section {
   width: 100%;
