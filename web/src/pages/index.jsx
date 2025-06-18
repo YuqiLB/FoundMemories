@@ -1,5 +1,5 @@
 import React from 'react';
-import "./indexpage.css";
+import "./indexPage.css";
 import Navbar from '../navbar/navbar.jsx';
 
 const navItems = [
