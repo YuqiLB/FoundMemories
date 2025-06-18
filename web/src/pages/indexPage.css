@@ -135,6 +135,13 @@ a:hover {
   .sharing-stories {
     text-align: center;
   }
+
+  .paragraphs {
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height:100%;
+  }
 }
 /*--------------------------Paragraph1 End---------------------------*/
 

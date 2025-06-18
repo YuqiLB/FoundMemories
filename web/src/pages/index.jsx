@@ -68,19 +68,21 @@ function App() {
           <div className="mission-top">
             <section id="mission-half">
               <h2>Our Mission & Story</h2>
+            <div className="paragraphs">
                 <p>
                   FoundMemories started with a simple but urgent truth: time doesn’t wait — and every untold story is a legacy that could disappear.
                   We’re a youth-led nonprofit on a mission to preserve the life stories of seniors by turning their memories into short animated films.
                   But we’re not just recording the past. We’re reconnecting generations. We’re giving elders a voice, and giving young people a way to lead with empathy and purpose.
                 </p>
+            </div>
             </section>
-          
+
             <img
               src="/src/assets/images/Placeholder.png"
               alt="Placeholder"
               className="mission-image"
             />
-          </div>   
+          </div>
 
           <div className="mission-bottom">
             <section id="mission-fill">
