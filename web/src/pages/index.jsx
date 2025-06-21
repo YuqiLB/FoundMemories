@@ -1,6 +1,6 @@
 import React from 'react';
 import "./indexPage.css";
-import Navbar from '../navbar/NavBar.jsx';
+import Navbar from '../navbar/navbar.jsx';
 
 const navItems = [
   { name: 'Story Archives', link: '#storyarchives' },

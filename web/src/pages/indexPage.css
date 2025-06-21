@@ -58,7 +58,7 @@ a:hover {
 
 .Page {
   flex: 1;
-  padding-top: 91px; /* height of navbar */
+  padding-top: 0px; /* height of navbar */
   width: 100%;
   box-sizing: border-box;
   padding-left: 1rem;
@@ -71,6 +71,11 @@ a:hover {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.centered-intro h1{
+  font-size: 50px;
+  font-weight: 600;
 }
 
 
