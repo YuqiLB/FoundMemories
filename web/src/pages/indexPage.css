@@ -58,7 +58,7 @@ a:hover {
 
 .Page {
   flex: 1;
-  padding-top: 180px; /* height of navbar */
+  padding-top: 91px; /* height of navbar */
   width: 100%;
   box-sizing: border-box;
   padding-left: 1rem;
