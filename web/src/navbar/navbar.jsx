@@ -9,7 +9,7 @@ const navItems = [
   { name: 'Story Archives', link: 'storyarchives' },
 ];
 
-const Navbar = () => {
+const navbar = () => {
   return (
     <header className="header">
       <div className="logo">🌿 FoundMemories</div>
@@ -37,4 +37,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default navbar;
