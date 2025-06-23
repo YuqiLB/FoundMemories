@@ -50,7 +50,7 @@ function App() {
     
       <div className="main-content">
         <img
-          src="/src/assets/images/HomePage4People.png"
+          src="/public/assets/images/HomePage4People.png"
           alt="People sharing stories"
           className="intro-image"
         />
@@ -78,7 +78,7 @@ function App() {
             </section>
 
             <img
-              src="/src/assets/images/Placeholder.png"
+              src="/assets/images/HomePageGrandfather.png"
               alt="Placeholder"
               className="mission-image"
             />
@@ -100,27 +100,27 @@ function App() {
             <p> Team Members</p>
 
             <img
-              src="/src/assets/images/circlePlaceholder.png"
+              src="/public/assets/images/circlePlaceholder.png"
               alt="teamPlaceholder"
               className="team-image1"
             />
             <img
-              src="/src/assets/images/circlePlaceholder.png"
+              src="/public/assets/images/circlePlaceholder.png"
               alt="teamPlaceholder"
               className="team-image2"
             />
             <img
-              src="/src/assets/images/circlePlaceholder.png"
+              src="/public/assets/images/circlePlaceholder.png"
               alt="teamPlaceholder"
               className="team-image3"
             />
             <img
-              src="/src/assets/images/circlePlaceholder.png"
+              src="/public/assets/images/circlePlaceholder.png"
               alt="teamPlaceholder"
               className="team-image4"
             />
             <img
-              src="/src/assets/images/circlePlaceholder.png"
+              src="/public/assets/images/circlePlaceholder.png"
               alt="teamPlaceholder"
               className="team-image5"
             />
