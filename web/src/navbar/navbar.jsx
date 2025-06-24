@@ -1,5 +1,6 @@
 import React from 'react';
-import '../pages/indexPage.css'; // or separate navbar.css if preferred
+import '../pages/indexPage.css'; 
+import { Link } from 'react-router-dom';
 
 const navItems = [
   { name: 'Impacts', link: 'impacts' },
@@ -9,22 +10,21 @@ const navItems = [
   { name: 'Story Archives', link: 'storyarchives' },
 ];
 
+//<Link to="/" className="logo">
+        //<img src={logoImage} alt="FoundMemories Logo" className="logo-image" />
+    //    FoundMemories
+     // </Link>
 const navbar = () => {
   return (
     <header className="header">
-      <div className="logo">🌿 FoundMemories</div>
+      <Link to="/" className="logo">🌿 FoundMemories</Link>
       <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item.name} className="nav-item">
             {item.name === 'Story Archives' ? (
-              <button
-                className="nav-button"
-                onClick={() => {
-                  document.getElementById('storyarchives')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
+              <Link to="/archives" className="nav-button">
                 {item.name}
-              </button>
+              </Link>
             ) : (
               <a href={item.link} className="nav-link">
                 {item.name}

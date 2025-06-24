@@ -1,6 +1,7 @@
 import React from 'react';
 import "./indexPage.css";
 import Navbar from '../navbar/navbar.jsx';
+//import "./public/assets/images/HomePage4People.png";
 
 const navItems = [
   { name: 'Story Archives', link: '#storyarchives' },

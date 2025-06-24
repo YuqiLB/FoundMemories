@@ -1,14 +1,40 @@
+// src/pages/archives.jsx
 import React from 'react';
-import Navbar from '../navbar/navbar';
+import Navbar from '../navbar/navbar.jsx';
+import './archives.css';
 
-const ArchivesPage = () => {
+// Future stories can be added here
+const stories = [
+  // Example format:
+  // {
+  //   title: "Grandma's Memories",
+  //   image: "/src/assets/images/story1.png",
+  //   link: "/stories/story1"
+  // }
+];
+
+const Archives = () => {
   return (
     <div className="archives-page">
-      <h1>Story Archives</h1>
-      <p>Here you’ll find a collection of stories we've preserved.</p>
-      {/* Add your archive content here */}
+      <Navbar />
+      <div className="archives-container">
+        <h1 className="archives-title">Our Stories</h1>
+
+        {stories.length === 0 ? (
+          <p className="no-stories-text">No stories available yet. Check back soon!</p>
+        ) : (
+          <div className="story-list">
+            {stories.map((story, index) => (
+              <a key={index} href={story.link} className="story-card">
+                <img src={story.image} alt={story.title} className="story-image" />
+                <h2 className="story-title">{story.title}</h2>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
-export default ArchivesPage;
+export default Archives;
