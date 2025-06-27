@@ -1,0 +1,52 @@
+.events-page {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  min-height: 100vh;
+  padding-top: 100px;
+  font-family: 'Arial', sans-serif;
+}
+
+.events-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.events-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.events-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-card {
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+.event-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,118 @@
+/* Page Base */
+.impacts-page {
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8eadd; 
+  color: #333;
+}
+
+
+.impact-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.impact-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.impact-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.impact-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.title-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000; /* Or match your site's primary text color */
+}
+
+
+.impact-hero-image {
+  width: 280px;
+  height: auto;
+  flex-shrink: 0;
+}
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.impact-stat {
+  max-width: 200px;
+}
+
+.impact-stat img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.8rem;
+}
+
+.impact-stat h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.impact-stat p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.impact-testimonies {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.testimony-placeholder {
+  width: 200px;
+  height: 280px;
+  background-color: #dcdcdc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .impact-hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .impact-text {
+    max-width: 100%;
+  }
+
+  .impact-hero-image {
+    width: 200px;
+  }
+}

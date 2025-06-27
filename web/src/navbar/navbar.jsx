@@ -1,11 +1,13 @@
 import React from 'react';
 import '../pages/indexPage.css'; 
 import { Link } from 'react-router-dom';
+import logoImage from '/assets/images/fmlogo.webp';
+
 
 const navItems = [
   { name: 'Impacts', link: 'impacts' },
   { name: 'Events', link: 'events' },
-  { name: 'Get Involved', link: 'get-involved' },
+  { name: 'Get Involved', link: 'getinvolved' },
   { name: 'Contact Us', link: 'contact' },
   { name: 'Story Archives', link: 'storyarchives' },
 ];
@@ -17,7 +19,10 @@ const navItems = [
 const navbar = () => {
   return (
     <header className="header">
-      <Link to="/" className="logo">🌿 FoundMemories</Link>
+      <Link to="/" className="logo">
+      <img src={logoImage} alt="FoundMemories Logo" className="logo-image" />
+      <span className="logo-text">FoundMemories</span>
+      </Link>
       <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item.name} className="nav-item">

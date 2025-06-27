@@ -39,12 +39,12 @@ a,
 a:visited,
 a:active {
   color: #4E3620 !important;
-  text-decoration: none;
+  text-decoration: none !important; 
 }
 
 a:hover {
   color: #6b4a29 !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* Structure */
@@ -287,11 +287,7 @@ a:hover {
   z-index: 1002;
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: var(--primary-text-color);
-}
+
 
 .nav-links {
   display: flex;
@@ -327,6 +323,25 @@ a:hover {
   background-color: var(--tertiary-color);
   color: var(--primary-text-color);
 }
+
+.logo-image {
+  height: 80px;
+  width: auto;    
+  border-radius: 50%
+}
+
+.logo {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;          
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-text-color); 
+}
+
 /*--------------------- Navbar Styles End------------------*/
 
 /* Sections */
