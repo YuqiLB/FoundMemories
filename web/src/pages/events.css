@@ -1,52 +1,78 @@
 .events-page {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  min-height: 100vh;
-  padding-top: 100px;
+  padding: 3rem 2rem;
+  background-color: #f6e9dd; /* Soft beige like your screenshot */
   font-family: 'Arial', sans-serif;
-}
-
-.events-content {
-  max-width: 900px;
+  color: #000;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
-.events-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.events-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2rem 0;
 }
 
-.events-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.event-list {
+.timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
 }
 
-.event-card {
-  background-color: var(--tertiary-color);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
-.event-card:hover {
-  transform: translateY(-4px);
+.event-date {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
 }
 
-.event-card h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+.calendar-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
-.event-card p {
-  font-size: 1.05rem;
-  line-height: 1.4;
+.event-details {
+  flex: 2;
+}
+
+.event-details h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.past-events {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.past-event-card {
+  width: 30%;
+  background-color: #ddd;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.past-event-card img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: cover;
+  border-radius: 6px;
 }

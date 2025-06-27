@@ -1,36 +1,41 @@
 import React from 'react';
-import Navbar from '../navbar/navbar.jsx';
 import './getinvolved.css';
+import Navbar from '../navbar/navbar.jsx';
+import extractorIcon from '/assets/images/extractor.png';
+import animatorIcon from '/assets/images/animator.png';
+import outreachIcon from '/assets/images/handshake.png';
 
 const GetInvolved = () => {
   return (
-    <div className="get-involved-page">
+    <div className="involved-container">
       <Navbar />
+      <h2 className="involved-title">Ready to Make a Difference?</h2>
+      <p className="involved-subtitle">Join FoundMemories in preserving the stories that matter</p>
 
-      <div className="get-involved-content">
-        <h1>Get Involved</h1>
-        <p>Be a part of the movement to preserve stories and connect generations in meaningful ways. Whether you’re a student, professional, or supporter — there’s a place for you here.</p>
+      <div className="roles-grid">
+        <div className="role-card">
+          <img src={extractorIcon} alt="Story Extractor" className="role-icon" />
+          <h3>Story Extractor</h3>
+          <p>Help capture seniors’ stories through interviews and empathy</p>
+          <p className="timeline">Project Based Timeline</p>
+          <button className="apply-button">Apply Now</button>
+        </div>
 
-        <section className="involved-section">
-          <h2>Volunteer with Us</h2>
-          <p>Join our team of youth volunteers who interview seniors, write scripts, and create animations. No experience necessary — just a passion for stories and community.</p>
-        </section>
+        <div className="role-card">
+          <img src={animatorIcon} alt="Animator" className="role-icon" />
+          <h3>Animator/Illustrator</h3>
+          <p>Bring stories to life through engaging animations and illustrations</p>
+          <p className="timeline">~2hrs/week</p>
+          <button className="apply-button">Apply Now</button>
+        </div>
 
-        <section className="involved-section">
-          <h2>Partner with Us</h2>
-          <p>We're always looking to collaborate with community centers, schools, senior homes, and media organizations. Let's work together to make memories last.</p>
-        </section>
-
-        <section className="involved-section">
-          <h2>Donate</h2>
-          <p>Your support helps us cover the cost of recording equipment, animation software, training workshops, and public showcases. Every contribution helps amplify a voice.</p>
-          <button className="donate-button">Make a Donation</button>
-        </section>
-
-        <section className="involved-section">
-          <h2>Contact Us</h2>
-          <p>Have questions or ideas? Reach out through our <a href="/contact">contact page</a>.</p>
-        </section>
+        <div className="role-card">
+          <img src={outreachIcon} alt="Outreach" className="role-icon" />
+          <h3>Partnerships & Outreach</h3>
+          <p>Connect with community organizations to expand our impact</p>
+          <p className="timeline">~2hrs/week</p>
+          <button className="apply-button">Apply Now</button>
+        </div>
       </div>
     </div>
   );
