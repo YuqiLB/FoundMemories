@@ -2,6 +2,8 @@ import React from 'react';
 import "./indexPage.css";
 import Navbar from '../navbar/navbar.jsx';
 //import "./public/assets/images/HomePage4People.png";
+import circlePlaceholder from "/assets/images/circlePlaceholder.png";
+import HomePage4People from "/assets/images/HomePage4People.png";
 
 const navItems = [
   { name: 'Story Archives', link: '#storyarchives' },
@@ -19,7 +21,7 @@ function App() {
       <Navbar />
       
       <div className="centered-intro">
-        <h1>Giving a voice to the past, a legacy for the future</h1>
+        <h1>Giving a voice to the past, a legacy for the future TEST</h1>
         <p>Discover an organization dedicated to preserving the untold stories of our elders through youth-led creativity</p>
       </div>
 
@@ -51,7 +53,7 @@ function App() {
     
       <div className="main-content">
         <img
-          src="/public/assets/images/HomePage4People.png"
+          src={HomePage4People}
           alt="People sharing stories"
           className="intro-image"
         />
@@ -101,27 +103,27 @@ function App() {
             <p> Team Members</p>
 
             <img
-              src="/public/assets/images/circlePlaceholder.png"
+              src={circlePlaceholder}
               alt="teamPlaceholder"
               className="team-image1"
             />
             <img
-              src="/public/assets/images/circlePlaceholder.png"
+              src={circlePlaceholder}
               alt="teamPlaceholder"
               className="team-image2"
             />
             <img
-              src="/public/assets/images/circlePlaceholder.png"
+              src={circlePlaceholder}
               alt="teamPlaceholder"
               className="team-image3"
             />
             <img
-              src="/public/assets/images/circlePlaceholder.png"
+              src={circlePlaceholder}
               alt="teamPlaceholder"
               className="team-image4"
             />
             <img
-              src="/public/assets/images/circlePlaceholder.png"
+              src={circlePlaceholder}
               alt="teamPlaceholder"
               className="team-image5"
             />
