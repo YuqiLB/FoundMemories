@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       
       <div className="centered-intro">
-        <h1>Giving a voice to the past, a legacy for the future TEST</h1>
+        <h1>Giving a voice to the past, a legacy for the future</h1>
         <p>Discover an organization dedicated to preserving the untold stories of our elders through youth-led creativity</p>
       </div>
 
