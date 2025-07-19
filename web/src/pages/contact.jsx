@@ -12,7 +12,7 @@ const Contact = () => {
         <p className="contact-subtitle">We’d love to hear from you! Whether you have questions, ideas, or want to get involved — reach out!</p>
 
         <div className="contact-details">
-          <p><strong>Email:</strong> <a href="mailto:info@foundmemories.org">info@foundmemories.org</a></p>
+          <p><strong>Email:</strong> <a href="mailto:reach.foundmemories@gmail.com">info@foundmemories.org</a></p>
           <p><strong>Instagram:</strong> <a href="https://instagram.com/foundmemories" target="_blank" rel="noopener noreferrer">@foundmemories</a></p>
           <p><strong>Location:</strong> Calgary, AB, Canada</p>
         </div>

@@ -8,6 +8,7 @@ const navItems = [
   { name: 'Impacts', link: 'impacts' },
   { name: 'Events', link: 'events' },
   { name: 'Get Involved', link: 'getinvolved' },
+  { name: 'Contact Us', link: 'contact' },
   { name: 'Story Archives', link: 'storyarchives' },
 ];
 
