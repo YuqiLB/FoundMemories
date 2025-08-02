@@ -18,7 +18,7 @@ const Events = () => {
             <img src={calendarIcon} alt="calendar icon" className="calendar-icon" />
             <div className="event-details">
               <h3>Event Name</h3>
-              <p>Event description</p>
+              <p className="">Event description</p>
             </div>
           </div>
         ))}

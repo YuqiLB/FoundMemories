@@ -1,4 +1,3 @@
-import React from 'react';
 import '../pages/indexPage.css'; 
 import { Link } from 'react-router-dom';
 import logoImage from '/assets/images/fmlogo.webp';
