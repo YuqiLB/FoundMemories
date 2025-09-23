@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../navbar/navbar.jsx';
 import './archives.css';
+import Youtube from 'react-youtube-embed';
 
 // Future stories can be added here
 const stories = [
@@ -11,6 +12,7 @@ const stories = [
   //   image: "/src/assets/images/story1.png",
   //   link: "/stories/story1"
   // }
+  <Youtube id = 'OLcJAbCOmoc'/>
 ];
 
 const Archives = () => {
@@ -19,7 +21,7 @@ const Archives = () => {
       <Navbar />
       <div className="archives-container">
         <h1 className="archives-title">Our Stories</h1>
-
+        {/*
         {stories.length === 0 ? (
           <p className="no-stories-text">No stories available yet. Check back soon!</p>
         ) : (
@@ -31,8 +33,13 @@ const Archives = () => {
               </a>
             ))}
           </div>
-        )}
+        )}*/}
+        <div className="storystory">
+          <Youtube id = 'OLcJAbCOmoc' className="Story1"/>
+        </div>
+        
       </div>
+      
     </div>
   );
 };
