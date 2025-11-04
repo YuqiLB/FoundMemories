@@ -3,33 +3,26 @@ import React, {useState} from 'react'
 import "./searchbar.css"
 import {FaSearch} from "react-icons/fa"
 
-const SearchBar = ({setResults}) => {
+const SearchBar = ({stories,setResults}) => {
     const [input, setInput] = useState("");
 
-    const fetchData = (value) => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then((response) => response.json())
-            .then((json) => {
-                const results = json.filter((user) => {
-                    return value && user && user.name && user.name.toLowerCase().includes(value);
-                });
-                setResults(results);
-            });
-        
-    }
-
     const handleChange = (value) => {
-        setInput(value);
-        fetchData(value);
-    }
+        setInput(value);    
+    
+    const filteredResults = stories.filter((story) =>
+      story.title.toLowerCase().includes(value.toLowerCase())
+    );
+
+    setResults(filteredResults);
+  };
   return (
     <div className="input-wrapper">
         <FaSearch id = "search-icon" />
         <input placeholder = "Type to search..." 
         value={input} 
-        onChange={(e) => handleChange(e.target.value)}        />
+        onChange={(e) => handleChange(e.target.value)}        
+        />
     </div>
-  )
-}
-
+  );
+};
 export default SearchBar

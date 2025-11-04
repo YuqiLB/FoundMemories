@@ -1,9 +1,15 @@
 import React from 'react'
 import "./SearchResult.css"
 
-const SearchResult = ({result}) => {
+const SearchResult = ({result, onSelect}) => {
   return (
-    <div className="search-result" onClick={(e)=> console.log('hi   ')}>{result.name}</div>
+    <div
+      className="search-result"  onClick={() => onSelect(result)}
+    >
+      <p className="result-title">{result.title}</p>
+      {//<p className="result-description">{result.description}</p>
+      }
+    </div>
   )
 }
 
