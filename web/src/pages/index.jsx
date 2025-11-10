@@ -9,13 +9,12 @@ function App() {
     <div className="Page">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="hero-section">
+      <section className="top-section">
         <h1>Giving a voice to the past, a legacy for the future</h1>
         <p>Discover an organization dedicated to preserving the untold stories of our elders through youth-led creativity</p>
       </section>
 
-      {/* About Section */}
+
       <section className="content-section about-section">
         <img
           src={HomePage4People}
@@ -28,7 +27,6 @@ function App() {
         </div>
       </section>
 
-      {/* Mission Section */}
       <section className="content-section mission-section">
         <img
           src="/assets/images/HomePageGrandfather.png"
@@ -45,7 +43,7 @@ function App() {
         </div>
       </section>
 
-      {/* Origin Story Section */}
+      
       <section className="content-section origin-section">
         <div className="section-text-full">
           <p>It all began with one conversation — a quiet, unexpected moment between a grandson and his grandfather. That single memory became our first story. And it reminded us of something deeply simple: listening can be transformative.</p>
@@ -58,7 +56,7 @@ function App() {
         </div>
       </section>
 
-      {/* Team Section */}
+      
       <section className="content-section team-section">
         <h2>Our Team</h2>
         <p className="team-subtitle">Team Members</p>

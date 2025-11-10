@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -20,15 +19,12 @@ html, body {
   --primary-text-color: #4e3620;
   --secondary-color: #688b64;
   --tertiary-color: #e8dcc9;
-
   --tag-background-color: #fceee6;
   --tag-text-color: #4e3620;
-
   --sub-text-size: 0.85em;
   --main-text-size: 1em;
   --sub-header-text-size: 1.5em;
   --header-text-size: 2em;
-
   --unhovered: #CF9A44;
   --navbackground: #E8E5CE;
 }
@@ -44,13 +40,12 @@ a:hover {
   color: #6b4a29 !important;
 }
 
-/* Structure */
 #root {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 91px;
+  padding-top: 4rem;
 }
 
 .Page {
@@ -59,34 +54,32 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Hero Section */
-.hero-section {
+.top-section {
   text-align: center;
   padding: 4rem 2rem;
-  max-width: 900px;
+  max-width: 56.25rem;
   margin: 0 auto;
 }
 
-.hero-section h1 {
+.top-section h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 600;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.hero-section p {
+.top-section p {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   color: #5a4630;
   line-height: 1.6;
 }
 
-/* Content Sections - Consistent Styling */
 .content-section {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 3rem auto;
   padding: 2rem;
   flex-wrap: wrap;
@@ -94,17 +87,17 @@ a:hover {
 
 .section-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   flex-shrink: 0;
   object-fit: cover;
 }
 
 .section-text {
   flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  min-width: 18.75rem;
+  max-width: 37.5rem;
 }
 
 .section-text h2 {
@@ -121,9 +114,8 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Full-width text sections */
 .section-text-full {
-  max-width: 900px;
+  max-width: 56.25rem;
   width: 100%;
 }
 
@@ -134,7 +126,6 @@ a:hover {
   color: var(--primary-text-color);
 }
 
-/* Specific Section Adjustments */
 .about-section {
   background-color: transparent;
 }
@@ -149,7 +140,6 @@ a:hover {
   padding: 3rem 2rem;
 }
 
-/* Team Section */
 .team-section {
   flex-direction: column;
   text-align: center;
@@ -170,16 +160,16 @@ a:hover {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 2rem;
-  max-width: 800px;
+  max-width: 50rem;
   width: 100%;
   justify-items: center;
 }
 
 .team-image {
   width: 100%;
-  max-width: 150px;
+  max-width: 9.375rem;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
@@ -191,14 +181,13 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Buttons */
 button {
   border: none;
   background-color: var(--secondary-color);
   color: white;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -206,10 +195,9 @@ button {
 
 button:hover {
   background-color: #44624a;
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 900px) {
   .content-section {
     gap: 2rem;
@@ -217,7 +205,7 @@ button:hover {
   }
 
   .section-image {
-    max-width: 400px;
+    max-width: 25rem;
   }
 
   .mission-section {
@@ -230,7 +218,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .hero-section {
+  .top-section {
     padding: 3rem 1.5rem;
   }
 
@@ -249,17 +237,17 @@ button:hover {
   }
 
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
     gap: 1.5rem;
   }
 
   .team-image {
-    max-width: 120px;
+    max-width: 7.5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .hero-section {
+  .top-section {
     padding: 2rem 1rem;
   }
 

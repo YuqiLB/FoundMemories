@@ -27,14 +27,23 @@ const navbar = () => {
       </Link>
       
       <button 
-        className="mobile-menu-toggle" 
+        id="open-sidebar-button"
+        className="mobile-menu-open" 
         onClick={toggleMenu}
-        aria-label="Toggle navigation menu"
+        aria-label="Toggle Side Navigation"
       >
-        <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+        <img src="/assets/images/navopener.png" alt="navopener" />
       </button>
 
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        <button 
+          id="close-sidebar-button"
+          className="mobile-menu-close"
+          onClick={toggleMenu}
+          aria-label="Close Sidebar"
+        >
+          <img src="/assets/images/navcloser.png" alt="navcloser" />
+        </button>
         {navItems.map((item) => (
           <li key={item.name} className="nav-item">
             {item.name === 'Story Archives' ? (
