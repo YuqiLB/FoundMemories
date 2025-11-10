@@ -10,7 +10,9 @@ function App() {
       <Navbar />
       
       <section className="top-section">
+        
         <h1>Giving a voice to the past, a legacy for the future</h1>
+        <h2> Found Memories </h2>
         <p>Discover an organization dedicated to preserving the untold stories of our elders through youth-led creativity</p>
       </section>
 

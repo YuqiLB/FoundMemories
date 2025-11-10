@@ -15,7 +15,7 @@ const Contact = () => {
           <p><strong>Email:</strong> <a href="mailto:reach.foundmemories@gmail.com">info@foundmemories.org</a></p>
           <p><strong>Instagram:</strong> <a href="https://instagram.com/foundmemories" target="_blank" rel="noopener noreferrer">@foundmemories</a></p>
           <p><strong>Location:</strong> Calgary, AB, Canada</p>
-          <p><strong>Developer Contact:</strong> Email: </p>
+          <p><strong>Developer Contact:</strong> Email: bondliuyq@gmail.com</p>
         </div>
 
         {/* Optional future form */}

@@ -36,6 +36,7 @@
   width: 1.75rem;
   height: 1.75rem;
   display: block;
+  filter: brightness(0.5) contrast(1.5);
 }
 
 #close-sidebar-button img {
@@ -43,6 +44,7 @@
   width: 1.75rem;
   height: 1.75rem;
   display: block;
+  filter: brightness(0.5) contrast(1.5);
 }
 
 #close-sidebar-button {
@@ -67,7 +69,7 @@
   background-color: transparent;
   color: transparent!important;
   text-decoration: none !important;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 
@@ -83,7 +85,7 @@
 }
 
 .nav-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   color: #6b4a29;
 }
 
@@ -189,7 +191,7 @@
   }
 
   .nav-link:hover {
-    transform: scale(1.02);
+    transform: scale(1.12);
   }
 
   .logo-text {

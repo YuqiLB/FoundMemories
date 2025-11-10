@@ -52,6 +52,13 @@ a:hover {
   flex: 1;
   width: 100%;
   box-sizing: border-box;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-background-color) 0%,
+    var(--primary-background-color) 25rem,
+    #e8dcc9 25rem,
+    #e8dcc9 100%
+  );
 }
 
 .top-section {
@@ -62,16 +69,26 @@ a:hover {
 }
 
 .top-section h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 600;
+  font-size:  3.5rem;
+  font-weight: 450;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
+.top-section h2 {
+  font-size:  3.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color:#CF9A44;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .top-section p {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: 1.3rem;
   color: #5a4630;
   line-height: 1.6;
+  
 }
 
 .content-section {

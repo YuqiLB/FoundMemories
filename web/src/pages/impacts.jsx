@@ -5,7 +5,7 @@ import './impacts.css';
 import elderImg from '/assets/images/elderIcon.webp';
 import volunteersImg from '/assets/images/volunteerIcon.webp';
 import handshakeImg from '/assets/images/handshakeIcon.webp';
-import elderyouthImg from '/assets/images/elderyouth.webp'; 
+import elderyouthImg from '/assets/images/elderyouth.png'; 
 import testimony1 from '/assets/images/testimonyholder.webp'; 
 
 const Impacts = () => {
@@ -13,12 +13,12 @@ const Impacts = () => {
     <div className="impacts-page">
       <Navbar />
 
-      {/* Title Section */}
+      
       <section className="impact-title-section">
         <h1>Impact</h1>
       </section>
 
-      {/* Hero Section */}
+      
       <section className="impact-hero-section">
         <div className="impact-hero-text">
           <h2>Every memory preserved is a legacy saved.</h2>
@@ -29,7 +29,7 @@ const Impacts = () => {
         <img src={elderyouthImg} alt="Elder and youth illustration" className="impact-hero-image" />
       </section>
 
-      {/* Stats Section */}
+      
       <section className="impact-stats-section">
         <div className="impact-stat-card">
           <img src={elderImg} alt="Elder icon" />
@@ -48,7 +48,7 @@ const Impacts = () => {
         </div>
       </section>
 
-      {/* Testimonies Section */}
+      {/* Testimonies Section 
       <section className="impact-testimonies-section">
         <h2>What People Are Saying</h2>
         <div className="testimonies-grid">
@@ -56,6 +56,7 @@ const Impacts = () => {
           <img src={testimony1} alt="Testimony 2" className="testimony-image" />
         </div>
       </section>
+      */}
     </div>
   );
 };
