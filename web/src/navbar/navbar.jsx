@@ -1,5 +1,6 @@
 import './navbar.css'; 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import logoImage from '/assets/images/fmlogo.webp';
 
 
@@ -11,26 +12,45 @@ const navItems = [
   { name: 'Story Archives', link: 'storyarchives' },
 ];
 
-//<Link to="/" className="logo">
-        //<img src={logoImage} alt="FoundMemories Logo" className="logo-image" />
-    //    FoundMemories
-     // </Link>
 const navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <Link to="/" className="logo">
-      <img src={logoImage} alt="FoundMemories Logo" className="logo-image" />
-      <span className="logo-text">FoundMemories</span>
+        <img src={logoImage} alt="FoundMemories Logo" className="logo-image" />
+        <span className="logo-text">FoundMemories</span>
       </Link>
-      <ul className="nav-links">
+      
+      <button 
+        className="mobile-menu-toggle" 
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
+        <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+      </button>
+
+      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         {navItems.map((item) => (
           <li key={item.name} className="nav-item">
             {item.name === 'Story Archives' ? (
-              <Link to="/archives" className="nav-button">
+              <Link 
+                to="/archives" 
+                className="nav-button"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {item.name}
               </Link>
             ) : (
-              <a href={item.link} className="nav-link">
+              <a 
+                href={item.link} 
+                className="nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {item.name}
               </a>
             )}

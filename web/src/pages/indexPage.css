@@ -11,7 +11,7 @@ html, body {
   font-family: 'Inter Tight', 'Poppins', sans-serif;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -29,10 +29,8 @@ html, body {
   --sub-header-text-size: 1.5em;
   --header-text-size: 2em;
 
-  /*Navbar colour stuff*/
   --unhovered: #CF9A44;
   --navbackground: #E8E5CE;
-  
 }
 
 a,
@@ -44,7 +42,6 @@ a:active {
 
 a:hover {
   color: #6b4a29 !important;
-  text-decoration: underline !important;
 }
 
 /* Structure */
@@ -58,237 +55,140 @@ a:hover {
 
 .Page {
   flex: 1;
-  padding-top: 0px; /* height of navbar */
   width: 100%;
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
-.centered-intro {
+/* Hero Section */
+.hero-section {
   text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 2rem;
-  max-width: 800px;
+  padding: 4rem 2rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.centered-intro h1{
-  font-size: 50px;
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 600;
-}
-
-
-/*--------------------------Paragraph1---------------------------*/
-
-.main-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-
-  font-family: Arial, sans-serif;
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  text-align: left;
-  flex-wrap: wrap; 
-
-}
-
-.intro-image {
-  width: 35%;
-  max-width: 600px;
-  height: auto;
-
-  border-radius: 6px;
-  flex-shrink: 0; 
-}
-
-.sharing-stories {
-  max-width: 600px;
-}
-
-.sharing-stories h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-
-}
-
-.sharing-stories p {
-  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-#about {
-  background: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+.hero-section p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #5a4630;
+  line-height: 1.6;
 }
 
-@media only screen and (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-image {
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-  
-  .sharing-stories {
-    text-align: center;
-  }
-
-  .paragraphs {
-    display:flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    height:100%;
-  }
-}
-/*--------------------------Paragraph1 End---------------------------*/
-
-/*--------------------------Paragraph2---------------------------*/
-.mission {
+/* Content Sections - Consistent Styling */
+.content-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-
-  font-family: Arial, sans-serif;
-  padding: 2rem;
+  gap: 3rem;
   max-width: 1400px;
-  margin: 0 auto;
-  text-align: left;
-  flex-wrap: wrap; 
-}
-
-.mission-image {
-  width: 35%;
-  max-width: 600px;
-  height: auto;
-
-  border-radius: 6px;
-  flex-shrink: 0; 
-}
-
-.mission-top {
-  display: flex;
-  align-items: left;
-  gap: 10rem;
+  margin: 3rem auto;
+  padding: 2rem;
   flex-wrap: wrap;
-  justify-content: left;
-  margin-bottom: 2rem;
-  text-align: left;
 }
 
-.mission-top h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-
-}
-
-.mission-top p {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  margin-bottom: 0rem;
-}
-
-#mission-half {
-  max-width: 600px;
-  flex: 1;
-  background: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-.mission-bottom {
-  margin-top: 0rem;
-}
-
-.mission-bottom h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-
-}
-
-.mission-bottom p {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  margin-bottom: 0rem;
-}
-
-.mission-image {
-  width: 35%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-#mission-fill {
-  background: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-@media only screen and (max-width: 768px) {
-  .mission {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .mission-image {
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-  
-  .mission-half {
-    text-align: center;
-  }
-}
-
-/*--------------------------Paragraph2 End---------------------------*/
-
-/*--------------------------Team---------------------------*/
-.team-image1{
-  width: 20%;
-}
-.team-image2{
-  width: 20%;
-}
-.team-image3{
-  width: 20%;
-}
-.team-image4{
-  width: 20%;
-}
-.team-image5{
-  width: 20%;
-}
-
-/*--------------------------Team End---------------------------*/
-
-/*--------------------- Navbar Styles End------------------*/
-
-/* Sections */
-section {
+.section-image {
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: var(--tertiary-color);
+  max-width: 500px;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  scroll-margin-top: 100px;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
+.section-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
 
-/* Links */
-a {
-  text-decoration: none;
+.section-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
   color: var(--primary-text-color);
+}
+
+.section-text p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+}
+
+/* Full-width text sections */
+.section-text-full {
+  max-width: 900px;
+  width: 100%;
+}
+
+.section-text-full p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+/* Specific Section Adjustments */
+.about-section {
+  background-color: transparent;
+}
+
+.mission-section {
+  flex-direction: row-reverse;
+}
+
+.origin-section {
+  text-align: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+/* Team Section */
+.team-section {
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.team-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.team-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #5a4630;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+  justify-items: center;
+}
+
+.team-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.team-image:hover {
+  transform: scale(1.05);
 }
 
 /* Buttons */
@@ -296,32 +196,78 @@ button {
   border: none;
   background-color: var(--secondary-color);
   color: white;
-  padding: 0.5rem 1rem;
-  font-weight: 500;
-  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #44624a;
+  transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .header {
-    padding: 1em 1.5em;
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .content-section {
+    gap: 2rem;
+    margin: 2rem auto;
   }
 
-  .nav-links {
+  .section-image {
+    max-width: 400px;
+  }
+
+  .mission-section {
     flex-direction: column;
-    gap: 1em;
-    margin-right: 0;
   }
 
-  .nav-link {
-    display: block;
-    font-size: 1.2em;
+  .about-section {
+    flex-direction: column;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .content-section {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .section-image {
+    max-width: 100%;
+  }
+
+  .section-text,
+  .section-text-full {
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .team-image {
+    max-width: 120px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
