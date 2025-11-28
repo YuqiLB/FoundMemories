@@ -5,7 +5,6 @@ import './impacts.css';
 import elderImg from '/assets/images/elderIcon.webp';
 import volunteersImg from '/assets/images/volunteerIcon.webp';
 import handshakeImg from '/assets/images/handshakeIcon.webp';
-import elderyouthImg from '/assets/images/elderyouth.png'; 
 import testimony1 from '/assets/images/testimonyholder.webp'; 
 
 const Impacts = () => {
@@ -26,7 +25,7 @@ const Impacts = () => {
             See how our community is reconnecting generations — one story at a time.
           </p>
         </div>
-        <img src={elderyouthImg} alt="Elder and youth illustration" className="impact-hero-image" />
+        <img src="/assets/images/elderyouth.png" alt="Elder and youth illustration" className="impact-hero-image" />
       </section>
 
       
